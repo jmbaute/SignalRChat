@@ -46,19 +46,19 @@ a {
     background-color:yellow;
     font-size:24px;
     color:black;
-    width:150px;
+    /*width:50px;*/
 }
 
 .playerTwo {
     background-color: gray;
     font-size: 24px;
     color: black;
-    width: 150px;
+    /*width: 150px;*/
 }
 .leftScoreNum {
     font-size: 48px;
     border: 1px solid #030200;
-    width: 150px;
+    width: 110px;
     text-align:center;
     background-color: inherit;
     color: inherit;
@@ -67,13 +67,13 @@ a {
 .rightScoreNum {
     font-size: 48px;
     border: 1px solid #030200;
-    width: 150px;
+    width: 110px;
     text-align: center;
     background-color: inherit;
     color: inherit;
 }
 .leftMark {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
     text-align: right;
     vertical-align: middle;
@@ -83,7 +83,7 @@ a {
     color: inherit;
 }
 .rightMark {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
     text-align: left;
     vertical-align: middle;
@@ -97,11 +97,11 @@ a {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
 }
 
 .scoreHeader {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
@@ -113,6 +113,7 @@ a {
     text-align: center;
     vertical-align: middle;
 }
+
 
 /* Sticky footer styles
 -------------------------------------------------- */

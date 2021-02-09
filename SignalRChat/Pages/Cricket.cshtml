@@ -3,72 +3,71 @@
     <div class="row">
         <div class="col-12 scoreHeader">Cricket</div>
     </div>
+    @*<div class="row">
+            <div class="col-md"></div>
+            <div class="col-4 col-md-auto"><h5>Player 1</h5><input type="text" id="player1NameInput" class="playerOne" /></div>
+            <div class="col-4 col-md-auto"><h5>Player 2 </h5><input type="text" id="player2NameInput" class="playerTwo" /></div>
+            <div class="col-md"></div>
+        </div>*@
     <div class="row">
-        <div class="col-3"></div>
-        <div class="col-2 playerOneLabel">Player 1 <input type="text" id="player1NameInput" class="playerOne" /></div>
-        <div class="col-2"></div>
-        <div class="col-2 playerTwoLabel">Player 2 <input type="text" id="player2NameInput" class="playerTwo" /></div>
-        <div class="col-3"></div>
+        <div class="col col-md"></div>
+        <div class="col-auto col-md-auto"><h5>Player 1</h5></div>
+        @*<div class="col-auto col-md-2"></div>*@
+        <div class="col-auto col-md-auto"><h5>Player 2 </h5></div>
+        <div class="col col-md"></div>
+    </div>
+    <div class="row">
+        <div class="col-auto col-md"></div>
+        <div class="col-1 col-md-auto"><input type="text" id="player1NameInput" class="playerOne" /></div>
+        @*<div class="col-auto col-md-2"></div>*@
+        <div class="col-1 col-md-auto"><input type="text" id="player2NameInput" class="playerTwo" /></div>
+        <div class="col-auto col-md"></div>
     </div>
     <div class="row">
         <div class="col text-center"><input type="text" class="activePlayer" id="activePlayer" value="1" /></div>
     </div>
     <div class="row">&nbsp;</div>
-    <div class="row">
-        <div class="col-2"></div>
-        <div class="col-4"><input class="leftScoreNum" type="text" id="player1Score" value="0" /></div>
-        <div class="col-2"></div>
-        <div class="col-4"><input class="rightScoreNum" type="text" id="player2Score" value="0" /></div>
-        <div class="col-1"></div>
+    <div class="row h-25">
+        <div class="col"></div>
+        <div class="col-auto col-md-auto"><input class="leftScoreNum" type="text" id="player1Score" value="0" /></div>
+        <div class="col-auto col-md-2"></div>
+        <div class="col-auto col-md-auto"><input class="rightScoreNum" type="text" id="player2Score" value="0" /></div>
+        <div class="col"></div>
     </div>
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-1"><input class="leftMark" id="player1TwentyMark" type="text"></div>
-        <div class="col-2 btn-lg scoreButton"><input type="button" id="twentyButton" value="20" /></div>
-        <div class="col-1"><input class="rightMark" id="player2TwentyMark" type="text" value=""></div>
-        <div class="col-4"></div>
+    <div class="row justify-content-center justify-content-md-center">
+        <div class="col-auto col-md-auto  my-auto"><input class="leftMark" id="player1TwentyMark" type="text" value=""></div>
+        <div class="col col-md-1 scoreButton  my-auto"><input type="button" id="twentyButton" value="20" /></div>
+        <div class="col-auto col-md-auto  my-auto"><input class="rightMark" id="player2TwentyMark" type="text" value=""></div>
     </div>
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-1"><input class="leftMark" id="player1NineMark" type="text" value=""></div>
-        <div class="col-2 btn-lg scoreButton"><input type="button" id="nineButton" value="19" /></div>
-        <div class="col-1"><input class="rightMark" id="player2NineMark" type="text" value=""></div>
-        <div class="col-4"></div>
+    <div class="row justify-content-center justify-content-md-center">
+        <div class="col-auto col-md-auto  my-auto"><input class="leftMark" id="player1NineMark" type="text" value=""></div>
+        <div class="col col-md-1 scoreButton  my-auto"><input type="button" id="nineButton" value="19" /></div>
+        <div class="col-auto col-md-auto  my-auto"><input class="rightMark" id="player2NineMark" type="text" value=""></div>
     </div>
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-1"><input class="leftMark" id="player1EightMark" type="text" value=""></div>
-        <div class="col-2 btn-lg scoreButton"><input type="button" id="eightButton" value="18" /></div>
-        <div class="col-1"><input class="rightMark" id="player2EightMark" type="text" value=""></div>
-        <div class="col-4"></div>
+    <div class="row justify-content-center justify-content-md-center ">
+        <div class="col-auto col-md-auto  my-auto"><input class="leftMark" id="player1EightMark" type="text" value=""></div>
+        <div class="col col-md-1 scoreButton  my-auto"><input type="button" id="eightButton" value="18" /></div>
+        <div class="col-auto col-md-auto  my-auto"><input class="rightMark" id="player2EightMark" type="text" value=""></div>
     </div>
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-1"><input class="leftMark" id="player1SevenMark" type="text" value=""></div>
-        <div class="col-2 btn-lg scoreButton"><input type="button" id="sevenButton" value="17" /></div>
-        <div class="col-1"><input class="rightMark" id="player2SevenMark" type="text" value=""></div>
-        <div class="col-4"></div>
+    <div class="row justify-content-center justify-content-md-center ">
+        <div class="col-auto col-md-auto  my-auto"><input class="leftMark" id="player1SevenMark" type="text" value=""></div>
+        <div class="col col-md-1 scoreButton  my-auto"><input type="button" id="sevenButton" value="17" /></div>
+        <div class="col-auto col-md-auto  my-auto"><input class="rightMark" id="player2SevenMark" type="text" value=""></div>
     </div>
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-1"><input class="leftMark" id="player1SixMark" type="text" value=""></div>
-        <div class="col-2 btn-lg scoreButton"><input type="button" id="sixButton" value="16" /></div>
-        <div class="col-1"><input class="rightMark" id="player2SixMark" type="text" value=""></div>
-        <div class="col-4"></div>
+    <div class="row justify-content-center justify-content-md-center ">
+        <div class="col-auto col-md-auto  my-auto"><input class="leftMark" id="player1SixMark" type="text" value=""></div>
+        <div class="col col-md-1 scoreButton  my-auto"><input type="button" id="sixButton" value="16" /></div>
+        <div class="col-auto col-md-auto  my-auto"><input class="rightMark" id="player2SixMark" type="text" value=""></div>
     </div>
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-1"><input class="leftMark" id="player1FiveMark" type="text" value=""></div>
-        <div class="col-2 btn-lg scoreButton"><input type="button" id="fiveButton" value="15" /></div>
-        <div class="col-1"><input class="rightMark" id="player2FiveMark" type="text" value=""></div>
-        <div class="col-4"></div>
+    <div class="row justify-content-center justify-content-md-center ">
+        <div class="col-auto col-md-auto  my-auto"><input class="leftMark" id="player1FiveMark" type="text" value=""></div>
+        <div class="col col-md-1 scoreButton  my-auto"><input type="button" id="fiveButton" value="15" /></div>
+        <div class="col-auto col-md-auto  my-auto"><input class="rightMark" id="player2FiveMark" type="text" value=""></div>
     </div>
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-1"><input class="leftMark" id="player1BullMark" type="text" value=""></div>
-        <div class="col-2 btn-lg scoreButton"><input type="button" id="bullButton" value="B" /></div>
-        <div class="col-1"><input class="rightMark" id="player2BullMark" type="text" value=""></div>
-        <div class="col-4"></div>
+    <div class="row justify-content-center justify-content-md-center ">
+        <div class="col-auto col-md-auto  my-auto"><input class="leftMark" id="player1BullMark" type="text" value=""></div>
+        <div class="col col-md-1 scoreButton  my-auto"><input type="button" id="bullButton" value="B" /></div>
+        <div class="col-auto col-md-auto  my-auto"><input class="rightMark" id="player2BullMark" type="text" value=""></div>
     </div>
     <div class="row">
         <div class="col text-center actionButton"><input type="button" id="enterButton" value="Enter" /></div>
