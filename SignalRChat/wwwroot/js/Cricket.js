@@ -247,16 +247,22 @@ connection.on("ReceiveScore", function (user, currentTotal, currentMark, pointVa
 });
 
 //pressing erase clears board
-document.getElementById("eraseButton").addEventListener("click", function (event) {
-    var result = confirm("Erase everything?");
-    if (result) {
+//document.getElementById("eraseButton").addEventListener("click", function (event) {
+//    var result = confirm("Erase everything?");
+//    if (result) {
+//        connection.invoke("EraseBoard").catch(function (err) {
+//            return console.error(err.toString());
+//        });
+//        event.preventDefault();
+//    }
+
+
+//});
+
+$('#confirm-delete').on('show.bs.modal', function (e) {
         connection.invoke("EraseBoard").catch(function (err) {
             return console.error(err.toString());
         });
-        event.preventDefault();
-    }
-
-
 });
 
 //perform the erase

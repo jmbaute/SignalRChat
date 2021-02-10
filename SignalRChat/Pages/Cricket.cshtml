@@ -73,7 +73,23 @@
         <div class="col text-center actionButton"><input type="button" id="enterButton" value="Enter" /></div>
     </div>
     <div class="row">
-        <div class="col text-center actionButton"><input type="button" id="eraseButton" value="Erase" /></div>
+        <div class="col text-center actionButton"><input type="button" id="eraseButton" value="Erase" data-toggle="modal" data-target="#confirm-delete"/></div>
+    </div>
+</div>
+<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="deleteLabel">Erase</h4>
+            </div>
+            <div class="modal-body">
+                <p>Confirm Erase?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-danger btn-ok">Delete</a>
+            </div>
+        </div>
     </div>
 </div>
     <script src="~/js/signalr/dist/browser/signalr.js"></script>
