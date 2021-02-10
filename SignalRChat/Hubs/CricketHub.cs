@@ -25,6 +25,12 @@ namespace SignalRChat.Hubs
             await Clients.All.SendAsync("ReceiveSwap", newUser);
         }
 
+        public async Task EraseBoard()
+        {
+
+            await Clients.All.SendAsync("EraseBoard");
+        }
+
         public async Task SendScore(string user, string currentTotal, string currentMark, string opponentMark, string pointVal)
         {
             if(currentMark=="")

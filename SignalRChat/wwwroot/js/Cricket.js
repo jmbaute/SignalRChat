@@ -245,3 +245,39 @@ connection.on("ReceiveScore", function (user, currentTotal, currentMark, pointVa
 
     }
 });
+
+//pressing erase clears board
+document.getElementById("eraseButton").addEventListener("click", function (event) {
+    var result = confirm("Erase everything?");
+    if (result) {
+        connection.invoke("EraseBoard").catch(function (err) {
+            return console.error(err.toString());
+        });
+        event.preventDefault();
+    }
+
+
+});
+
+//perform the erase
+connection.on("EraseBoard", function () {
+    document.getElementById("player1Score").value = "0";
+    document.getElementById("player2Score").value = "0";
+
+    document.getElementById("player1TwentyMark").value = "";
+    document.getElementById("player1NineMark").value = "";
+    document.getElementById("player1EightMark").value = "";
+    document.getElementById("player1SevenMark").value = "";
+    document.getElementById("player1SixMark").value = "";
+    document.getElementById("player1FiveMark").value = "";
+    document.getElementById("player1BullMark").value = "";
+
+    document.getElementById("player2TwentyMark").value = "";
+    document.getElementById("player2NineMark").value = "";
+    document.getElementById("player2EightMark").value = "";
+    document.getElementById("player2SevenMark").value = "";
+    document.getElementById("player2SixMark").value = "";
+    document.getElementById("player2FiveMark").value = "";
+    document.getElementById("player2BullMark").value = "";
+
+});
